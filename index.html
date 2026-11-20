@@ -1,32 +1,995 @@
-<!--
-# Privacy Policy
+<!--header className="site-header">
+        <a className="brand" href="#top" aria-label="Privacy policy, back to top">
+          <BrandMark />
+          <span className="brand-copy">
+            <span className="brand-name">Gamedayy APPs</span>
+            <span className="brand-subtitle">PRIVACY CENTER</span>
+          </span>
+        </a>
+        <div className="header-note"><span className="status-dot" /> A straightforward guide to your data</div>
+        <a className="header-date" href="#policy">
+          <span>Effective September 27, 2026</span>
+          <ArrowDownRight size={15} strokeWidth={1.7} />
+        </a>
+      </header>
 
-A clean, static HTML5 and CSS privacy policy page built for **Gamedayy APPs**. Designed with an editorial, plain-language layout to clearly communicate on-device data storage practices and third-party advertising disclosures.
+      <main>
+        <section className="hero" aria-labelledby="page-title">
+          <div className="hero-copy">
+            <div className="eyebrow"><span>PRIVACY POLICY</span><span className="eyebrow-rule" /><span>SEPTEMBER 27, 2026</span></div>
+            <h1 id="page-title">Your life is personal.<br /><em>Your data should be, too.</em></h1>
+            <p className="hero-description">A clear, plain-language look at what happens to information when you use our app—and what stays in your hands.</p>
+            <a className="hero-link" href="#policy">Read the policy <ArrowDownRight size={16} strokeWidth={1.8} /></a>
+          </div>
+          <HeroSeal />
+          <span className="hero-index" aria-hidden="true">01 — 07</span>
+        </section>
 
-## Overview
+        <section className="privacy-summary" aria-label="Privacy at a glance">
+          <div className="summary-icon"><ShieldCheck size={22} strokeWidth={1.65} /></div>
+          <div className="summary-copy">
+            <p className="summary-title">Your personal logs stay on your device.</p>
+            <p>We don’t send your logs or photos to external servers. Google AdMob may collect limited device and advertising information to serve and measure ads.</p>
+          </div>
+          <div className="summary-tag"><span /> ON-DEVICE BY DESIGN</div>
+        </section>
 
-This repository contains the standalone web page for the Gamedayy APPs Privacy Center (effective September 27, 2026). It requires no build tools or JavaScript frameworks to run and features:
+        <div className="policy-layout" id="policy">
+          <aside className="contents-panel" aria-label="Policy contents">
+            <p className="contents-label">IN THIS POLICY</p>
+            <nav className="contents-nav">
+              {sections.map((section) => (
+                <a className="contents-link" href={`#${section.id}`} key={section.id}>
+                  <span className="contents-number">{section.number}</span>
+                  <span>{section.title}</span>
+                  <ArrowUpRight className="contents-arrow" size={14} strokeWidth={1.7} />
+                </a>
+              ))}
+            </nav>
+            <div className="contents-card">
+              <div className="contents-card-icon"><Camera size={16} strokeWidth={1.7} /></div>
+              <p className="contents-card-title">Made to stay yours.</p>
+              <p>Your entries and photos are stored on your device, where you stay in control.</p>
+            </div>
+          </aside>
 
-- **On-Device First Summary:** Highlights local storage practices for calorie logs, event tracking, and photos.
-- **Sticky Table of Contents:** Quick-jump navigation across all seven policy sections (`01` through `07`).
-- **Responsive Design:** Adapts cleanly across desktop, tablet, and mobile viewports using modern CSS Grid and Flexbox.
-- **Zero External Dependencies:** Uses inline SVGs and system font stacks for fast load times.
+          <article className="policy-document" aria-label="Privacy policy details">
+            <div className="document-heading">
+              <span className="document-kicker"><span className="document-dot" /> THE DETAILS</span>
+              <span className="document-count">7 sections <span>·</span> 4 min read</span>
+            </div>
 
-## Project Structure
+            <section className="policy-section" id="information">
+              <div className="section-index">01</div>
+              <div className="section-body">
+                <h2>Information we collect <span>&amp; local storage</span></h2>
+                <p>We believe in data minimization. Your core personal data and app content are stored locally on your device and are never transmitted to or stored on external servers or cloud databases.</p>
+                <ul className="detail-list">
+                  <li><span className="list-mark" /><div><strong>Calorie and event logs</strong><p>Any text, numbers, dates, or meal descriptions you manually enter are saved strictly on your device’s internal storage.</p></div></li>
+                  <li><span className="list-mark" /><div><strong>Camera and photo library data</strong><p>With your permission, the app uses your camera to capture food or event photos, or accesses your gallery so you can select images for your logs. These photos remain on your device and are not uploaded to an external server.</p></div></li>
+                  <li><span className="list-mark" /><div><strong>Image metadata</strong><p>Any location or time metadata attached to your photos is processed entirely on-device to help organize your logs.</p></div></li>
+                </ul>
+              </div>
+            </section>
 
-```text
-├── index.html   # Semantic HTML5 structure and privacy policy content
-├── style.css    # Editorial layout, typography, and responsive styles
-└── README.md    # Project documentation
-```
+            <section className="policy-section" id="third-parties">
+              <div className="section-index">02</div>
+              <div className="section-body">
+                <h2>Third-party services <span>&amp; advertising</span></h2>
+                <p>While your personal logs remain private on your device, the app integrates third-party software development kits (SDKs) to serve advertisements.</p>
+                <p>Specifically, we use Google AdMob to display ads. Google AdMob may automatically collect and use certain non-personal data from your device to serve relevant ads, limit how many times you see an ad, and track ad performance. This data may include:</p>
+                <ul className="simple-list">
+                  <li>Your device’s Advertising ID (AAID).</li>
+                  <li>IP address and general location (country/city level).</li>
+                  <li>Device manufacturer, model, and operating system version (Android).</li>
+                </ul>
+                <p>Google’s use of this data is governed by the <a className="inline-link" href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy &amp; Terms <ArrowUpRight size={13} /></a>.</p>
+              </div>
+            </section>
 
-## Getting Started
+            <section className="policy-section" id="retention">
+              <div className="section-index">03</div>
+              <div className="section-body">
+                <h2>Data retention <span>&amp; deletion</span></h2>
+                <p>Because your data is stored locally, we do not control or have access to your logs.</p>
+                <ul className="simple-list">
+                  <li>You can delete individual entries or photos at any time within the app.</li>
+                  <li>Uninstalling the app from your device will permanently delete all of your calorie logs, tracked events, and app settings. We cannot recover this data for you.</li>
+                </ul>
+              </div>
+            </section>
 
-1. Clone or download this repository.
-2. Open `index.html` directly in any web browser, or deploy the files to any static web host (such as GitHub Pages, Netlify, or Vercel).
-3. Update `[Insert App Name]` in **Section 04 (`#permissions`)** of `index.html` to match your published ... application name.
+            <section className="policy-section" id="permissions">
+              <div className="section-index">04</div>
+              <div className="section-body">
+                <h2>Permissions <span>&amp; control</span></h2>
+                <p>You have full control over your device permissions and can change them at any time through your Android settings (Settings &gt; Apps &gt; [Insert App Name] &gt; Permissions):</p>
+                <ul className="simple-list">
+                  <li><strong>Camera &amp; storage:</strong> Revoking these permissions will prevent you from adding photo logs, but you will still be able to manually type in your text and calorie data.</li>
+                  <li><strong>Personalized ads:</strong> You can opt out of personalized advertising by resetting or turning off your Advertising ID in your Android system settings (Settings &gt; Privacy &gt; Ads).</li>
+                </ul>
+              </div>
+            </section>
 
-## Contact
+            <section className="policy-section" id="children">
+              <div className="section-index">05</div>
+              <div className="section-body">
+                <h2>Children’s privacy</h2>
+                <p>Our app is not intended for use by children under the age of 13. Because we do not collect personal logs on external servers, we do not knowingly gather or store data from children. Ad networks utilized by the app are configured to comply with child safety laws (such as COPPA).</p>
+              </div>
+            </section>
 
-For questions regarding this privacy policy, reach out to [the.real.double.o.seven@gmail.com](mailto:the.real.double.o.seven@gmail.com).
+            <section className="policy-section" id="changes">
+              <div className="section-index">06</div>
+              <div className="section-body">
+                <h2>Changes to this policy</h2>
+                <p>We may update our Privacy Policy from time to time to reflect changes in our practices or ad network requirements. We will notify you of any changes by updating the “Effective Date” at the top of this policy and making the text accessible within the app.</p>
+              </div>
+            </section>
+
+            <section className="policy-section policy-section-last" id="contact">
+              <div className="section-index">07</div>
+              <div className="section-body">
+                <h2>Get Connected</h2>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                <div className="contact-card"><span className="contact-label">EMAIL</span><span className="contact-value"><a href="mailto:the.real.double.o.seven@gmail.com" target="_blank">Send Email</a></span></div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </main>
+
+      <footer className="site-footer">
+        <a className="footer-brand" href="#top"><BrandMark /><span>Privacy, kept simple.</span></a>
+        <span className="footer-note">Effective September 27, 2026 <span>·</span> <a href="#top">Back to top ↑</a></span>
+      </footer-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gamedayy APPs Privacy Policy — A straightforward guide to your data.">
+  <title>Privacy Policy — Gamedayy APPs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  /* 2. `style.css*/
+/* =========================================
+   Base & Editorial Variables
+========================================= */
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-subtle: #f4f4f5;
+  --text-main: #18181b;
+  --text-muted: #52525b;
+  --text-light: #71717a;
+  --border: #e4e4e7;
+  --accent: #059669;
+  --accent-bg: #ecfdf5;
+  --accent-border: #a7f3d0;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --max-width: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================
+   Site Header
+========================================= */
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.brand-subtitle {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+}
+
+.header-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.header-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-main);
+  padding: 0.4rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.header-date:hover {
+  border-color: var(--text-main);
+}
+
+/* =========================================
+   Main Container & Hero
+========================================= */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.hero {
+  position: relative;
+  padding: 4.5rem 0 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.hero-copy {
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+}
+
+.eyebrow-rule {
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background-color: var(--border);
+}
+
+.hero h1 {
+  font-size: clamp(2.15rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin-bottom: 1.75rem;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--surface);
+  background-color: var(--text-main);
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.hero-link:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.hero-seal {
+  flex-shrink: 0;
+}
+
+.hero-index {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+/* =========================================
+   Privacy Summary Banner
+========================================= */
+.privacy-summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.summary-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--accent-bg);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.summary-copy {
+  flex: 1;
+}
+  .summary-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.summary-copy p:last-child {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.summary-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.summary-tag span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* =========================================
+   Two-Column Policy Layout
+========================================= */
+.policy-layout {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  padding-bottom: 5rem;
+}
+
+/* Sticky Sidebar */
+.contents-panel {
+  position: sticky;
+  top: 2rem;
+}
+
+.contents-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  margin-bottom: 0.85rem;
+}
+
+.contents-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.contents-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.contents-link:hover {
+  background-color: var(--surface-subtle);
+  color: var(--text-main);
+}
+
+.contents-number {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.contents-arrow {
+  margin-left: auto;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.contents-link:hover .contents-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+.contents-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.contents-card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.contents-card-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+  .contents-card p:last-child {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* =========================================
+   Policy Document & Sections
+========================================= */
+.policy-document {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2.75rem;
+}
+
+.document-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.25rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.document-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-main);
+}
+
+.document-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-main);
+}
+
+.policy-section {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 1.25rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 2rem;
+}
+
+.policy-section-last {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.section-index {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  padding-top: 0.25rem;
+}
+
+.section-body h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.85rem;
+}
+
+.section-body h2 span {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.section-body > p {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.section-body > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Detail List (Section 01) */
+.detail-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+}
+
+.list-mark {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+}
+
+.detail-list strong {
+  display: block;
+  font-size: 0.94rem;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.detail-list p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Simple Bullet List */
+.simple-list {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.simple-list strong {
+  color: var(--text-main);
+}
+
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--text-main);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+  color: var(--accent);
+}
+
+/* Contact Card (Section 07) */
+.contact-card {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.25rem;
+}
+
+.contact-label {
+font-size: 0.72rem;
+font-weight: 700;
+letter-spacing: 0.08em;
+color: var(--text-light);
+}
+.contact-value a {
+font-size: 0.92rem;
+font-weight: 600;
+color: var(--accent);
+}
+.contact-value a:hover {
+text-decoration: underline;
+}
+/* =========================================
+Site Footer
+========================================= */
+.site-footer {
+max-width: var(--max-width);
+margin: 0 auto;
+padding: 2rem 1.5rem 3rem;
+border-top: 1px solid var(--border);
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+font-size: 0.85rem;
+color: var(--text-muted);
+}
+.footer-brand {
+display: inline-flex;
+align-items: center;
+gap: 0.65rem;
+font-weight: 600;
+color: var(--text-main);
+}
+.footer-note a {
+font-weight: 500;
+color: var(--text-main);
+}
+.footer-note a:hover {
+text-decoration: underline;
+}
+  /* =========================================
+Responsive Breakpoints
+========================================= */
+@media (max-width: 900px) {
+.policy-layout {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+.contents-panel {
+position: static;
+}
+.contents-nav {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.privacy-summary {
+flex-direction: column;
+align-items: flex-start;
+}
+}
+@media (max-width: 680px) {
+.header-note,
+.hero-seal,
+.hero-index {
+display: none;
+}
+.hero {
+padding: 3rem 0 2.5rem;
+}
+.policy-document {
+padding: 1.75rem 1.25rem;
+}
+.policy-section {
+grid-template-columns: 1fr;
+gap: 0.35rem;
+}
+.site-footer {
+flex-direction: column;
+align-items: flex-start;
+}
+}
+
+
+  
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Privacy policy, back to top">
+      <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#18181B"/>
+        <path d="M16 7L23 10.5V16C23 20.5 20 24.2 16 25.5C12 24.2 9 20.5 9 16V10.5L16 7Z" stroke="#FAFAFA" stroke-width="1.8" stroke-linejoin="round"/>
+        <circle cx="16" cy="15.5" r="2.2" fill="#10B981"/>
+      </svg>
+      <span class="brand-copy">
+        <span class="brand-name">Gamedayy APPs</span>
+        <span class="brand-subtitle">PRIVACY CENTER</span>
+      </span>
+    </a>
+
+    <div class="header-note"><span class="status-dot"></span> A straightforward guide to your data</div>
+
+    <a class="header-date" href="#policy">
+      <span>Effective September 27, 2026</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>PRIVACY POLICY</span><span class="eyebrow-rule"></span><span>SEPTEMBER 27, 2026</span></div>
+        <h1 id="page-title">Your life is personal.<br><em>Your data should be, too.</em></h1>
+        <p class="hero-description">A clear, plain-language look at what happens to information when you use our app—and what stays in your hands.</p>
+        <a class="hero-link" href="#policy">
+          Read the policy
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-seal" aria-hidden="true">
+        <svg width="156" height="156" viewBox="0 0 156 156" fill="none">
+          <circle cx="78" cy="78" r="74" stroke="#E4E4E7" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <circle cx="78" cy="78" r="56" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="1.5"/>
+          <path d="M78 48L100 58V75C100 90.2 90.6 103.5 78 108C65.4 103.5 56 90.2 56 75V58L78 48Z" fill="#ECFDF5" stroke="#059669" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M70 78L75.5 83.5L87 72" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <span class="hero-index" aria-hidden="true">01 — 07</span>
+    </section>
+
+    <section class="privacy-summary" aria-label="Privacy at a glance">
+      <div class="summary-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <div class="summary-copy">
+        <p class="summary-title">Your personal logs stay on your device.</p>
+        <p>We don’t send your logs or photos to external servers. Google AdMob may collect limited device and advertising information to serve and measure ads.</p>
+      </div>
+      <div class="summary-tag"><span></span> ON-DEVICE BY DESIGN</div>
+    </section>
+
+    <div class="policy-layout" id="policy">
+      <aside class="contents-panel" aria-label="Policy contents">
+        <p class="contents-label">IN THIS POLICY</p>
+        <nav class="contents-nav">
+          <a class="contents-link" href="#information">
+            <span class="contents-number">01</span>
+            <span>Information we collect</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="contents-link" href="#third-parties">
+            <span class="contents-number">02</span>
+            <span>Third-party services</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="contents-link" href="#retention">
+            <span class="contents-number">03</span>
+            <span>Data retention</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="contents-link" href="#permissions">
+            <span class="contents-number">04</span>
+            <span>Permissions &amp; control</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="contents-link" href="#children">
+            <span class="contents-number">05</span>
+            <span>Children’s privacy</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="contents-link" href="#changes">
+            <span class="contents-number">06</span>
+            <span>Changes to this policy</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="contents-link" href="#contact">
+            <span class="contents-number">07</span>
+            <span>Get Connected</span>
+            <svg class="contents-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </nav>
+
+        <div class="contents-card">
+          <div class="contents-card-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </div>
+          <p class="contents-card-title">Made to stay yours.</p>
+          <p>Your entries and photos are stored on your device, where you stay in control.</p>
+        </div>
+      </aside>
+
+      <article class="policy-document" aria-label="Privacy policy details">
+        <div class="document-heading">
+          <span class="document-kicker"><span class="document-dot"></span> THE DETAILS</span>
+          <span class="document-count">7 sections <span>·</span> 4 min read</span>
+        </div>
+
+        <section class="policy-section" id="information">
+          <div class="section-index">01</div>
+          <div class="section-body">
+            <h2>Information we collect <span>&amp; local storage</span></h2>
+            <p>We believe in data minimization. Your core personal data and app content are stored locally on your device and are never transmitted to or stored on external servers or cloud databases.</p>
+            <ul class="detail-list">
+              <li><span class="list-mark"></span><div><strong>Calorie and event logs</strong><p>Any text, numbers, dates, or meal descriptions you manually enter are saved strictly on your device’s internal storage.</p></div></li>
+              <li><span class="list-mark"></span><div><strong>Camera and photo library data</strong><p>With your permission, the app uses your camera to capture food or event photos, or accesses your gallery so you can select images for your logs. These photos remain on your device and are not uploaded to an external server.</p></div></li>
+              <li><span class="list-mark"></span><div><strong>Image metadata</strong><p>Any location or time metadata attached to your photos is processed entirely on-device to help organize your logs.</p></div></li>
+            </ul>
+          </div>
+        </section>
+        
+        <section className="policy-section" id="permissions">
+              <div className="section-index">04</div>
+              <div className="section-body">
+                <h2>Permissions <span>&amp; control</span></h2>
+                <p>You have full control over your device permissions and can change them at any time through your Android settings (Settings &gt; Apps &gt; [Insert App Name] &gt; Permissions):</p>
+                <ul className="simple-list">
+                  <li><strong>Camera &amp; storage:</strong> Revoking these permissions will prevent you from adding photo logs, but you will still be able to manually type in your text and calorie data.</li>
+                  <li><strong>Personalized ads:</strong> You can opt out of personalized advertising by resetting or turning off your Advertising ID in your Android system settings (Settings &gt; Privacy &gt; Ads).</li>
+                </ul>
+              </div>
+            </section>
+
+            <section className="policy-section" id="children">
+              <div className="section-index">05</div>
+              <div className="section-body">
+                <h2>Children’s privacy</h2>
+                <p>Our app is not intended for use by children under the age of 13. Because we do not collect personal logs on external servers, we do not knowingly gather or store data from children. Ad networks utilized by the app are configured to comply with child safety laws (such as COPPA).</p>
+              </div>
+            </section>
+
+            <section className="policy-section" id="changes">
+              <div className="section-index">06</div>
+              <div className="section-body">
+                <h2>Changes to this policy</h2>
+                <p>We may update our Privacy Policy from time to time to reflect changes in our practices or ad network requirements. We will notify you of any changes by updating the “Effective Date” at the top of this policy and making the text accessible within the app.</p>
+              </div>
+            </section>
+
+            <section className="policy-section policy-section-last" id="contact">
+              <div className="section-index">07</div>
+              <div className="section-body">
+                <h2>Get Connected</h2>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                <div className="contact-card"><span className="contact-label">EMAIL</span><span className="contact-value"><a href="mailto:the.real.double.o.seven@gmail.com" target="_blank">Send Email</a></span></div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </main>
+
+      <footer className="site-footer">
+        <a className="footer-brand" href="#top"><BrandMark /><span>Privacy, kept simple.</span></a>
+        <span className="footer-note">Effective September 27, 2026 <span>·</span> <a href="#top">Back to top ↑</a></span>
+      </footer>
+</body>
+
+  
+<!--Your device’s Advertising ID (AAID).
+• 
+IP address and general location (country/city level).
+• 
+Device manufacturer, model, and operating system version (Android).
+Google’s use of this data is governed by the Google Privacy & Terms .
+03
+
+Data retention & deletion
+Because your data is stored locally, we do not control or have access to your logs.
+• You can delete individual entries or photos at any time within the app.
+• Uninstalling the app from your device will permanently delete all of your calorie logs, tracked events, and app settings. We cannot recover this data for you.
+04
+
+Permissions & control
+You have full control over your device permissions and can change them at any time through your Android settings (Settings > Apps > [Insert App Name] > Permissions):
+• Camera & storage: Revoking these permissions will prevent you from adding photo logs, but you will still be able to manually type in your text and calorie data.
+• Personalized ads: You can opt out of personalized advertising by resetting or turning off your Advertising ID in your Android system settings (Settings > Privacy > Ads).
+05
+
+Children’s privacy
+Our app is not intended for use by children under the age of 13. Because we do not collect personal logs on external servers, we do not knowingly gather or store data from children. Ad networks utilized by the app are configured to comply with child safety laws (such as COPPA).
+06
+
+Changes to this policy
+We may update our Privacy Policy from time to time to reflect changes in our practices or ad network requirements. We will notify you of any changes by updating the “Effective Date” at the top of this policy and making the text accessible within the app.
+07
+
+Get Connected
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+EMAIL
+Send Email
+
+
+
+
+Privacy, kept simple.
+
+Effective September 27, 2026 · Back to top ↑
+
+
+
 -->
+</html>
